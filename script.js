@@ -4,7 +4,7 @@ function numberFunction(number) {
     } else if (number < 100) {
         return number / 2;
     } else if (number < 10) {
-        console.log(number * number);
+        return number * number;
     } else if (number >= 100 && number < 200) {
         return number;
     } else {
