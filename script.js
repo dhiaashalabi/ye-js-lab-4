@@ -1,6 +1,5 @@
 function numberFunction(number) {
     if (number >= 10 && number <= 20) {
-        console.log(number);
         return number;
     } else if (number < 100) {
         return number / 2;
