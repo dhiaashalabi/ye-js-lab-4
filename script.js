@@ -13,6 +13,16 @@ function numberFunction(number) {
     }
 }
 
-document.getElementById("btn").addEventListener("click", function() {
+function triggerEvent(){
     document.getElementById("result").innerHTML = numberFunction(document.getElementById("number").value);
+}
+
+document.getElementById("number").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        triggerEvent();
+    }
+});
+
+document.getElementById("btn").addEventListener("click", function() {
+    triggerEvent();
 });
